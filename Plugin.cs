@@ -1,12 +1,5 @@
-﻿using MEC;
-using SupplyDrops.Handlers;
-using Synapse.Api;
+﻿using SupplyDrops.Handlers;
 using Synapse.Api.Plugin;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SupplyDrops
 {
@@ -29,11 +22,6 @@ namespace SupplyDrops
             SynapseController.Server.Logger.Info("SupplyDrops loaded!");
 
             new EventHandlers();
-        }
-
-        public override void ReloadConfigs()
-        {
-
         }
     }
 }

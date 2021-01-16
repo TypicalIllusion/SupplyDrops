@@ -6,32 +6,33 @@ namespace SupplyDrops
 {
     public class Config : AbstractConfigSection
     {
-        public int minPlayersForSupply = 4;
+        public int MinPlayersForSupply { get; set; } = 4;
 
-        public bool isOnlyHelicopter = true;
+        public bool IsOnlyHelicopter { get; set; } = true;
+        public bool IsOnlyCICar { get; set; } = false;
 
-        public int ciCarChance = 50;
+        public int CiCarChance = 50;
 
-        public List<SerializedItem> items = new List<SerializedItem>()
+        public List<SerializedItem> Items { get; set; } = new List<SerializedItem>()
         {
             new SerializedItem((int) ItemType.Medkit, 0, 0, 0, 0, Vector3.one),
             new SerializedItem((int) ItemType.Medkit, 0, 0, 0, 0, Vector3.one),
             new SerializedItem((int) ItemType.Radio, 0, 0, 0, 0, Vector3.one)
         };
 
-        public float supplyIntervall = 300;
+        public float SupplyIntervall { get; set; } = 300;
 
-        public bool doBroadcast = true;
+        public bool DoBroadcast { get; set; } = true;
 
-        public ushort broadcastDuration = 15;
+        public ushort BroadcastDuration { get; set; } = 15;
 
-        public bool doCassieAnnouncement = true;
+        public bool DoCassieAnnouncement { get; set; } = true;
 
-        public string broadcastMessageCI = "<b>A Supply drop has arrived via <color=#2EB800>CI Car</color></b>";
+        public string BroadcastMessageCI { get; set; } = "<b>A Supply drop has arrived via <color=#2EB800>CI Car</color></b>";
 
-        public string broadcastMessageMTF = "<b>A Supply drop has arrived via <color=#1F22C7>NTF Helicopter</color>!</b>";
+        public string BroadcastMessageMTF { get; set; } = "<b>A Supply drop has arrived via <color=#1F22C7>NTF Helicopter</color>!</b>";
 
-        public string cassieAnnouncement = "Supply has enter the facility";
+        public string CassieAnnouncement { get; set; } = "Supply has enter the facility";
     }
 
 }
