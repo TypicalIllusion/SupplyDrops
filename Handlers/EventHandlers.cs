@@ -64,7 +64,7 @@ namespace SupplyDrops.Handlers
                             yield return Timing.WaitForSeconds(15f);
 
 
-                            foreach (var items in Config.items)
+                            foreach (var items in Plugin.Config.items)
                                 items.Parse().Drop(ciSpawn);
 
                         }
@@ -77,7 +77,7 @@ namespace SupplyDrops.Handlers
 
                             yield return Timing.WaitForSeconds(15f);
 
-                            foreach (var items in Config.items)
+                            foreach (var items in Plugin.Config.items)
                                 items.Parse().Drop(ciSpawn);
 
                         }
@@ -91,7 +91,7 @@ namespace SupplyDrops.Handlers
 
                         yield return Timing.WaitForSeconds(15f);
 
-                        foreach (var items in Config.items)
+                        foreach (var items in Plugin.Config.items)
                             items.Parse().Drop(ciSpawn);
                     }
 

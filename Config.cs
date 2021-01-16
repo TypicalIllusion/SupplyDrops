@@ -12,7 +12,7 @@ namespace SupplyDrops
 
         public int ciCarChance = 50;
 
-        public static List<SerializedItem> items = new List<SerializedItem>()
+        public List<SerializedItem> items = new List<SerializedItem>()
         {
             new SerializedItem((int) ItemType.Medkit, 0, 0, 0, 0, Vector3.one),
             new SerializedItem((int) ItemType.Medkit, 0, 0, 0, 0, Vector3.one),
